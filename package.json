@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^0.0.0-experimental-eb33bd747-20240312",
-    "react-dom": "^0.0.0-experimental-eb33bd747-20240312",
+    "react": "0.0.0-experimental-e3ebcd54b-20240405",
+    "react-dom": "0.0.0-experimental-e3ebcd54b-20240405",
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
