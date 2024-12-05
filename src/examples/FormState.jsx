@@ -13,18 +13,18 @@ const FormState = () => {
         else{
             return {
                 success: false,
-                text: "Error"
+                text: "Oops!! Error"
             }
         }
     }
     const [ message, formAction ] = useFormState(submitForm, null)
     return <>
     <h3>useFormState() example</h3>
-    <form action={formAction}>
+    <form action={formAction} className='my-3'>
         <label>Name</label>
-        <input type="text" name="username" />
+        <input type="text" name="username" className="border-2 rounded-md"/>
         <br />
-        <button>Submit</button>
+        <button className="bg-blue-400">Submit</button>
         {message && <h4>{message.text}</h4>}
     </form>
     </>

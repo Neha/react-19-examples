@@ -1,6 +1,6 @@
 # React19 New Features
 
-This repo has the examples of ReactJS 19 new features:
+This repo has the examples of ReactJS 19 new features. You can read in detail about React19 at my blog at FreeCodeCamp , or watch video on my YouTube channel.
 
 1. Action
 

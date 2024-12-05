@@ -2,7 +2,7 @@ import { useOptimistic, useState } from "react";
 
 const Optimistic = () => {
   const [messages, setMessages] = useState([
-    { text: "Hey, I am initial message!", sending: false, key: 1 },
+    { text: "Intial message", sending: false, key: 1 },
   ]);
   const [optimisticMessages, addOptimisticMessage] = useOptimistic(
     messages,
@@ -32,21 +32,20 @@ const Optimistic = () => {
   };
 
   return (
-    <>
-      
+    <> 
       {optimisticMessages.map((message, index) => (
-        <div key={index}>
+        <div className="font-bold" key={index}>
           {message.text}
           {!!message.sending && <small> (Sending...)</small>}
         </div>
       ))}
       <form action={submitData}>
-      <h3>useOptimistic() example</h3>
-        <div>
+      <h3 className="text-orange-400 font-bold">useOptimistic() example</h3>
+        <div className="my-3">
           <label>Username</label>
-          <input type="text" name="username" />
+          <input type="text" name="username" className="border-2 rounded-md"/>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="bg-blue-400">Submit</button>
       </form>
     </>
   );
